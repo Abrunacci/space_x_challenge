@@ -9,11 +9,31 @@ FastAPI offline challenge ([Challenge requirements](https://doc.clickup.com/4598
 * [Docker-compose](https://docs.docker.com/compose/install/)
 * [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
-### Run application (with Docker compose)
-
+### Clone repository
 ```shell
 git pull https://github.com/Abrunacci/space_x_challenge.git
 cd space_x_challenge
+```
+
+### Environment variables values
+This two files should be already in the repository. If not, please create both with the following values.
+
+`Docker/development/env/public`
+```shell
+TRELLO_API_BASE_URL=https://api.trello.com/1/
+LOG_LEVEL=debug
+API_HOST=0.0.0.0
+```
+
+`Docker/development/env/private`
+```shell
+TRELLO_API_KEY=<set your Trello API key>
+```
+
+If you weren't provided with the Trello API key, [you can create one for your boards](https://developer.atlassian.com/cloud/trello/guides/rest-api/api-introduction/).
+### Run application (with Docker compose)
+
+```shell
 docker compose build
 docker compose up -d
 ```
