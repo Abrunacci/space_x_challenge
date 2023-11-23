@@ -30,7 +30,7 @@ API_HOST=0.0.0.0
 TRELLO_API_KEY=<set your Trello API key>
 ```
 
-If you weren't provided with the Trello API key, [you can create one for your boards](https://developer.atlassian.com/cloud/trello/guides/rest-api/api-introduction/).
+If you weren't provided with the Trello API key and token, [you can create one for your boards](https://developer.atlassian.com/cloud/trello/guides/rest-api/api-introduction/).
 ### Run application (with Docker compose)
 
 ```shell
