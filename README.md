@@ -28,6 +28,8 @@ API_HOST=0.0.0.0
 `Docker/development/env/private`
 ```shell
 TRELLO_API_KEY=<set your Trello API key>
+TRELLO_API_TOKEN=<set your Trello API key>
+TRELLO_API_ADMIN=<set your Trello user ID>
 ```
 
 If you weren't provided with the Trello API key and token, [you can create one for your boards](https://developer.atlassian.com/cloud/trello/guides/rest-api/api-introduction/).
