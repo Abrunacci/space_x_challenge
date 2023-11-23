@@ -1,0 +1,21 @@
+version: '3.9'
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Docker/development/Dockerfile
+    command: bash ./scripts/start.sh
+    env_file:
+      - "Docker/development/env/public"
+      - "Docker/development/env/private"
+    ports:
+      - "3000:8000"
+    volumes:
+      - .:/app
+    networks:
+      - challenge_network
+
+networks:
+  challenge_network:
+    driver: bridge
