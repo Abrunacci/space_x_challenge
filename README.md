@@ -86,6 +86,16 @@ TOTAL                                  123      0   100%
 
     Creates a new task.
 
-    
+    {
+        "type": "task type",
+        "title": "task title" [optional], 
+        "description": "task description" [optional],
+        "category": "task category" [optional]
+    }
 
-    curl 'http://0.0.0.0:3000/'
+    curl -X 'POST' 'http://localhost:3000/' -H 'accept: application/json' -H 'Content-Type: application/json' -d '{"type": "bug", "description": "another day, another bug"}'
+
+---
+
+# Trello board:
+https://trello.com/b/WS3irMZu/spacexchallenge
