@@ -57,6 +57,20 @@ docker compose down
 # API Test Coverage:
 
 ```shell
+---------- coverage: platform linux, python 3.10.13-final-0 ----------
+Name                                 Stmts   Miss  Cover
+--------------------------------------------------------
+src/connectors/trello_connector.py      22      0   100%
+src/exceptions/trello_connector.py       8      0   100%
+src/exceptions/trello_service.py         4      0   100%
+src/main.py                              9      0   100%
+src/routers/trello.py                   10      0   100%
+src/schemas/tasks.py                     8      0   100%
+src/services/trello.py                  62      0   100%
+--------------------------------------------------------
+TOTAL                                  123      0   100%
+
+
 
 ```
 
@@ -68,12 +82,10 @@ docker compose down
 
     curl 'http://0.0.0.0:3000/docs'
 
-### [GET] http://0.0.0.0:3000/
+### [POST] http://0.0.0.0:3000/
 
-    Redirects to API documentation.
+    Creates a new task.
+
+    
 
     curl 'http://0.0.0.0:3000/'
-
-According to this image provided in the challenge, we should perform all the requests with GET.
-![img.png](readme_images/img.png)
-

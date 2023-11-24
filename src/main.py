@@ -4,9 +4,9 @@ FastAPI initialization
 import logging.config
 
 from fastapi import FastAPI
+from src.routers.trello import router as trello_router
 
-
-ROUTERS = []
+ROUTERS = [trello_router]
 
 app = FastAPI()
 
