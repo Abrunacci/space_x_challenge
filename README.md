@@ -23,17 +23,19 @@ This two files should be already in the repository. If not, please create both w
 TRELLO_API_BASE_URL=https://api.trello.com/1/
 LOG_LEVEL=debug
 API_HOST=0.0.0.0
+ENVIRONMENT=develop
+BOARD_NAME=SpaceXChallenge
 ```
 
 `Docker/development/env/private`
 ```shell
-TRELLO_API_KEY=<set your Trello API key>
-TRELLO_API_TOKEN=<set your Trello API key>
-TRELLO_API_ADMIN=<set your Trello user ID>
+TRELLO_API_KEY=faa8b65898f3f7d84483cfd4e73dd3c1
+TRELLO_API_TOKEN=ATTAa9ce010f959f1f7870857be489ce327330e01fb190a094687ca02b9ca8ad8a4645F7AEE2
+TRELLO_API_USER=abrunacci87userintegration1
 ```
 
 If you weren't provided with the Trello API key and token, [you can create one for your boards](https://developer.atlassian.com/cloud/trello/guides/rest-api/api-introduction/).
-### Run application (with Docker compose)
+### Run application
 
 ```shell
 docker compose build
